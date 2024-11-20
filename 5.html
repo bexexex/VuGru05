@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VuGru - Quote Response</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>VuGru</h2>
+            <button class="create-project-btn">Create Project +</button>
+            <nav>
+                <a href="#">Past Projects</a>
+                <a href="#">Current Projects</a>
+                <a href="#">Pending Quotes</a>
+            </nav>
+            <div class="settings">
+                <a href="#">Settings</a>
+                <a href="#">Log out</a>
+            </div>
+        </div>
+
+        <div class="content" id="clientScreen">
+            <h1>Respond to Quote</h1>
+            <p class="intro-text">After viewing the videographer content, please respond to the quote:</p>
+            
+            <div class="quote-details">
+                <h2>Quote from Vinny</h2>
+                <p>Project: Darden Video</p>
+                <p>Total Amount: $750</p>
+                <p>Completion Date: 11/1/2025</p>
+            </div>
+
+            <label for="responseMessage">Comments</label>
+            <textarea id="responseMessage" placeholder="Add a message for the videographer..."></textarea>
+
+            <div class="button-group">
+                <button type="button" class="accept-quote-btn" id="acceptQuoteBtn">Accept Quote</button>
+                <button type="button" class="decline-quote-btn" id="declineQuoteBtn">Decline Quote</button>
+            </div>
+
+            <div id="outputMessage" class="output-message"></div>
+        </div>
+
+        <div class="content" id="videographerScreen" style="display: none;">
+            <h1 id="responseTitle">Client Response</h1>
+            <div class="quote-details">
+                <h2>Quote for Darden Video</h2>
+                <p>Client: John Doe</p>
+                <p>Total Amount: $750</p>
+                <p>Completion Date: 11/1/2025</p>
+            </div>
+
+            <h3>Client Comments:</h3>
+            <div id="clientComments" class="client-comments"></div>
+
+            <div id="newQuoteSection" style="display: none;">
+                <h3>Submit New Quote</h3>
+                <textarea id="newQuoteDetails" placeholder="Enter details for the new quote..."></textarea>
+                <button type="button" class="submit-new-quote-btn" id="submitNewQuoteBtn">Submit New Quote</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
