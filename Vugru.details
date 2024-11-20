@@ -1,0 +1,8 @@
+---
+name: Name of your fiddle
+description: Brief description of your fiddle
+authors:
+  - Your Name
+resources:
+  - http://example.com/external-resource.js
+---
